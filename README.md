@@ -1,21 +1,10 @@
-# AGOGI — The Art of Strength
+# AGOGI — Spartan Release
 
-Created by **Lexus Portes**.
+This package is a functional GitHub Pages PWA. The iPhone icon uses the approved close-up AGOGI gorilla icon; the app hero uses the approved original tattooed gorilla/barbell master artwork.
 
-This is a new, standalone, mobile-first Progressive Web App, not a reskin of IRON LOG. It includes a premium dashboard, a seven-day training plan, editable sets/reps/weights, completed set logging, exercise swapping, workout history, bodyweight tracking, JSON export/import, offline service worker, and an interactive **2D** muscle atlas.
+## Install to GitHub Pages
+Upload the main files into the repository root, and upload icon-192.png, icon-512.png, emblem.png inside the existing `icons/` folder (plural). Keep index.html at the repository root. Commit, then wait for GitHub Pages to publish.
 
-## Publish using GitHub Pages
+The app stores workout data locally on the device, supports sets, weights, reps, exercise swaps, rest timer, history, bodyweight, and 2D anatomy education. It does NOT include real 3D anatomy or photographic exercise tutorials.
 
-Upload the **contents** of this folder to the root of your existing `iron-log` repository, replacing the files of the same name. Keep the `icons` folder structure. In Settings → Pages, deploy from `main` branch and `/ (root)` folder. The website URL stays `https://alexisportes37.github.io/iron-log/`.
-
-The app uses a fresh `agogi_fresh_v1` localStorage key. Previous IRON LOG data is not imported automatically. This build does **not** include a realistic 3D anatomical model. The muscle atlas is a selectable 2D educational diagram.
-
-## Files
-
-- `index.html`, `style.css`, `app.js`
-- `manifest.webmanifest`, `sw.js`
-- `icons/icon-192.png`, `icons/icon-512.png`
-
-## Offline and testing
-
-Serve over HTTPS for installability. On iPhone use Safari → Share → Add to Home Screen. After replacing a prior app, refresh in Safari and allow the service worker to update. Tested with JavaScript syntax checks and asset inspection; physical iPhone testing still needed.
+If an old home-screen icon persists after GitHub publishes, open the site in Safari and remove/re-add the Home Screen shortcut; iOS can retain an old icon.
