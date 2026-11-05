@@ -39,3 +39,20 @@ Serve locally (not `file://`): `python3 -m http.server 8000` from this folder, t
 
 ## Future App Store release
 This is a PWA, **not** a native iOS App Store binary. A future native or wrapped App Store submission requires Apple Developer enrollment, signing, an appropriate iOS build toolchain/service, store metadata, privacy disclosures, and review. Apple may reject an app that merely wraps a website without sufficient app-like functionality.
+
+## Version 2 upgrade (muscle education + exercise swapping)
+
+This upgrade keeps the original `iron-log-data-v1` localStorage key so your saved workouts remain accessible on the **same device and same website address**. Still export a backup from Settings before replacing files.
+
+### New features
+- Tap **Swap exercise** in any active exercise card. Choose a suggested alternative or type a custom exercise. Completed sets are preserved as a separate exercise entry; incomplete sets are discarded when swapping.
+- **MUSCLES** tab: tap simplified muscle areas or labels, then switch Beginner/Advanced explanations. This is a stylized educational diagram, not a licensed detailed 3D anatomical model.
+
+### Updating GitHub Pages on a phone
+1. Export your existing workout backup first.
+2. Replace `index.html`, `app.js`, `style.css`, and `sw.js` in the **root** of the same GitHub repository. Keep `manifest.webmanifest` and `icons/` as they were. Do **not** upload the ZIP itself as the site.
+3. Wait for GitHub Pages to deploy, reload the app online, and reopen it from the Home Screen. The service worker cache is versioned `iron-log-v2`. If an old page remains, close the installed app and refresh in Safari/Chrome.
+4. Confirm your previous History is still present. Avoid clearing website data or uninstalling until you have exported a backup.
+
+## Creator credit
+Created by **Lexus Portes**. The creator credit appears in the Settings screen.
